@@ -1,9 +1,10 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Tray} = require('electron')
 var path = require('path')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
+let tray
 
 function createWindow () {
   // Create the browser window.
@@ -29,6 +30,11 @@ function createWindow () {
   })
 }
 
+function createTray() {
+  tray = new Tray(path.join(__dirname, 'resources/tray.png'))
+}
+
+app.on('ready', createTray)
 app.on('ready', createWindow)
 
 // Quit when all windows are closed.
