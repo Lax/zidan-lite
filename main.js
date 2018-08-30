@@ -1,4 +1,5 @@
 const {app, BrowserWindow} = require('electron')
+var path = require('path')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -6,7 +7,15 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 960, height: 720})
+  mainWindow = new BrowserWindow({
+    width: 1146, height: 720,
+    title: '子弹短信 - 社区版 Lite',
+    titleBarStyle: 'default',
+    fullscreenWindowTitle: true,
+    devTools: false,
+    scrollBounce: true,
+    icon: path.join(__dirname, 'resources/zidan.png'),
+  })
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
