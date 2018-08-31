@@ -1,13 +1,13 @@
 # 子弹短信社区版
 
-宇宙最牛的高效沟通软件「子弹短信」的 macOS 客户端
+_可能是_宇宙最牛的高效沟通软件「子弹短信」的 `macOS` 客户端
 
 ![「子弹短信」社区版 Lite](.assets/screenshot.jpeg)
 
 
 ## Install
 
-[Releases](releases)
+[Releases](https://github.com/Lax/zidan-lite/releases)
 
 
 ## Contributing
@@ -19,7 +19,8 @@
 5. Create a new Pull Request
 
 
-## Author
+## Contributors
 
 * [Lax](https://lax.github.io)
+
 ![Lax](.assets/lax.jpg)
