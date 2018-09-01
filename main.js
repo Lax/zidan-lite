@@ -1,4 +1,4 @@
-const {app, BrowserWindow, Tray} = require('electron')
+const {app, BrowserWindow, Tray, Menu} = require('electron')
 var path = require('path')
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -32,6 +32,38 @@ function createWindow () {
 
 function createTray() {
   tray = new Tray(path.join(__dirname, 'resources/tray.png'))
+
+  const menu = Menu.buildFromTemplate([
+    {
+      label: '显示主界面',
+      click: () => {
+        if (mainWindow === null) {
+          createWindow()
+        } else {
+          mainWindow.show();
+        }
+      }
+    }, {
+      label: '退出',
+      click: () => {
+        app.quit();
+      }
+    }
+  ]);
+
+  tray.setToolTip('子弹短信 - 社区版 Lite');
+
+  tray.on('click', () => {
+    if (mainWindow === null) {
+      createWindow()
+    } else {
+      mainWindow.show();
+    }
+  });
+
+  tray.on('right-click', () => {
+    tray.popUpContextMenu(menu);
+  });
 }
 
 app.on('ready', createTray)
