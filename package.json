@@ -7,7 +7,7 @@
     },
     "devDependencies": {
         "electron": "^7.0.0",
-        "asar": "^2.0.1"
+        "asar": "^2.0.3"
     },
     "dependencies": {}
 }
