@@ -55,10 +55,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.2.tgz#75ba3beda30d690b89a5089ca1c6e8e386150b76"
   integrity sha512-dsfE4BHJkLQW+reOS6b17xhZ/6FB1rB8eRRvO08nn5o+voxf3i74tuyFWNH6djdfgX7Sm5s6LD8t6mJug4dpDw==
 
-asar@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/asar/-/asar-3.0.2.tgz#884d04a0549d5c3cd84816ff6784ec0d735fdd3e"
-  integrity sha512-nFtY0kToUcMEAY8f6qmeyqn+HZzovwlKsbzf5yjEnzOksFzJLTxWvP2jbzItFT04BdaL3CZKRApTr5iRofVq6g==
+asar@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/asar/-/asar-3.0.3.tgz#1fef03c2d6d2de0cbad138788e4f7ae03b129c7b"
+  integrity sha512-k7zd+KoR+n8pl71PvgElcoKHrVNiSXtw7odKbyNpmgKe7EGRF9Pnu3uLOukD37EvavKwVFxOUpqXTIZC5B5Pmw==
   dependencies:
     chromium-pickle-js "^0.2.0"
     commander "^5.0.0"
