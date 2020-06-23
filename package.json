@@ -6,7 +6,7 @@
         "start": "electron ."
     },
     "devDependencies": {
-        "electron": "^9.0.1",
+        "electron": "^9.0.5",
         "asar": "^3.0.3"
     },
     "dependencies": {}
